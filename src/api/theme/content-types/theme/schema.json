@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "theme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "primary_text_color": {
+      "type": "string"
+    },
+    "secondary_text_color": {
+      "type": "string"
+    },
+    "tertiary_text_color": {
+      "type": "string"
+    },
+    "primary_bg": {
+      "type": "string"
+    },
+    "secondary_bg": {
+      "type": "string"
+    },
+    "tertiary_bg": {
+      "type": "string"
+    },
+    "primary_font": {
+      "type": "string"
+    },
+    "secondary_font": {
+      "type": "string"
+    },
+    "tertiary_font": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "page_bg": {
+      "type": "string"
+    }
+  }
+}

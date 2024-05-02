@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "microapps",
+  "info": {
+    "singularName": "microapp",
+    "pluralName": "microapps",
+    "displayName": "microapp",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "theme": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theme.theme"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::microapp-category.microapp-category"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "microapp"
+    },
+    "product_categories": {
+      "displayName": "product categories",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-categories.product-categories"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}
